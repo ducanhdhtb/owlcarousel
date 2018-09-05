@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Example </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+	
+	
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="1.css">
+	<!--  jQuery 1.7+  -->
+	<script src="jquery-1.9.1.min.js"></script>
+
+	<!-- Include js plugin -->
+	<script src="js/owl.carousel.js"></script>
+</head>
+<body >
+	<div class="container">
+		<div class="owl-carousel owl-theme">
+			<div class="item defined"><img src="images/g1 (1).jpg" alt=""></div>
+			<div class="item defined"><img src="images/g1 (2).jpg" alt=""></div>
+			<div class="item defined"><img src="images/g3.jpg" alt=""></div>
+			<div class="item defined"><img src="images/g4.jpg" alt=""></div>
+			<div class="item defined"><img src="images/g5.jpg" alt=""></div>
+			<div class="item defined"><img src="images/g6.jpg" alt=""></div>
+			<div class="item defined"><img src="images/g7.jpg" alt=""></div>
+			<div class="item defined"><img src="images/g8.jpg" alt=""></div>
+		</div>	
+	</div>
+	
+	<script>
+		$(document).ready(function () {
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 0,
+				responsiveClass: true,
+				responsive: {
+					0: {
+						items: 1,
+						nav: true
+					},
+					600: {
+						items: 1,
+						nav: false
+					},
+					900: {
+						items: 2,
+						nav: false
+					},
+					1000: {
+						items:5,
+						nav: true,
+						loop: false,
+						margin: 20
+					}
+				}
+			})
+		})
+	</script>
+
+</body>
+</html>
